@@ -57,6 +57,7 @@ Additionally, the test result can be translated into an IQ score for the chatbot
 
 The AertIQ test can be easily executed with Python. Below is an example Python code to run the test:
 
+```python
 import json
 import difflib
 
@@ -80,6 +81,7 @@ print(f"Questions: {questions_max}")
 print(f"True Responses: {true_response}")
 print(f"Output of AertIQ test: {(true_response/questions_max)*100}")
 print(f"Minimum IQ of your chatbot: {(true_response/questions_max)*110}")
+```
 
 This code loads the questions.json file, compares the chatbot's responses to the correct answers, and calculates the final success rate. The result indicates the chatbot's IQ.
 
